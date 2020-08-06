@@ -1,0 +1,24 @@
+@import "variables";
+@import "mixins";
+
+* {
+	@include reset;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	background-color: $background-color;
+	justify-content: center;
+	align-items: center;
+	button {
+		@include buttonDefault($button-color, white);
+		padding: 10vh;
+		font-size: 3.5rem;
+		transition: all 0.2s;
+		&:hover {
+			background-color: $button-color-hover;
+			transform: scale(0.99);
+		}
+	}
+}

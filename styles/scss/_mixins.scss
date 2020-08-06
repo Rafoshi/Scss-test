@@ -1,0 +1,13 @@
+@mixin reset {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@mixin buttonDefault($color-button, $color-font) {
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: $color-button;
+	color: $color-font;
+}
